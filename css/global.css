@@ -1,0 +1,478 @@
+:root {
+
+	--main-color: #008936;
+	--color-two: #282A39;
+	--color-three: #484848;
+	--color-four: #505050;
+	--white-color: rgb(255, 255, 255);
+	--white-color-rgb: 255, 255, 255;
+	--black-color: rgb(0, 0, 0);
+	--black-color-rgb: 0, 0, 0;
+	/* Fonts */
+	--font-raleway-black: 'ralewayblack';
+	--font-raleway-bold: 'ralewaybold';
+	--font-raleway-extrabold: 'ralewayextrabold';
+	--font-raleway-semibold: 'ralewaysemibold';
+	--font-raleway-medium: 'ralewaymedium';
+	--font-raleway-regular: 'ralewayregular';
+	--font-raleway-light: 'ralewaylight';
+	--font-lato-black: 'lato_blackregular';
+	--font-lato-bold: 'latobold';
+	--font-lato-regular: 'latoregular';
+	--font-lato-light: 'lato_lightregular';
+
+	/* Fonts Size's */
+
+	--font-10: 10px;
+	--font-12: 12px;
+	--font-13: 13px;
+	--font-14: 14px;
+	--font-15: 15px;
+	--font-16: 16px;
+	--font-18: 18px;
+	--font-20: 20px;
+	--font-22: 22px;
+	--font-24: 24px;
+	--font-26: 26px;
+	--font-28: 28px;
+	--font-30: 30px;
+	--font-32: 32px;
+	--font-34: 34px;
+	--font-35: 35px;
+	--font-36: 36px;
+	--font-40: 40px;
+	--font-42: 42px;
+	--font-44: 44px;
+	--font-48: 48px;
+	--font-50: 50px;
+	--font-52: 52px;
+	--font-54: 54px;
+	--font-55: 55px;
+	--font-56: 56px;
+	--font-58: 58px;
+	--font-60: 60px;
+	--font-62: 62px;
+	--font-64: 64px;
+	--font-65: 65px;
+	--font-66: 66px;
+	--font-68: 68px;
+	--font-70: 70px;
+	--font-72: 72px;
+	--font-74: 74px;
+	--font-76: 76px;
+	--font-78: 78px;
+	--font-80: 80px;
+	--font-85: 85px;
+	--font-90: 90px;
+	--font-95: 95px;
+	--font-100: 100px;
+	--font-110: 110px;
+	--font-120: 120px;
+	--font-150: 150px;
+	--font-200: 200px;
+
+}
+
+
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+ ***/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	outline: none;
+}
+
+/*** 
+
+====================================================================
+	Global Settings
+====================================================================
+
+***/
+
+body {
+	font-family: var(--font-lato-regular);
+	font-size: 14px;
+	line-height: 1.6em;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+
+.bordered-layout .page-wrapper {
+	padding: 0px 50px 0px;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: var(--main-color);
+}
+
+.text-right {
+	text-align: right;
+}
+
+.mCSB_inside>.mCSB_container {
+	margin-right: 0px !important;
+}
+
+button,
+a:hover,
+a:focus,
+a:visited {
+	text-decoration: none;
+	outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	position: relative;
+	margin: 0px;
+	background: none;
+	font-family: var(--font-raleway-bold);
+}
+
+textarea {
+	overflow: hidden;
+}
+
+a {
+	-webkit-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.text,
+p {
+	position: relative;
+	line-height: 32px;
+	font-family: var(--font-lato-regular);
+	font-size: var(--font-16);
+	color: var(--color-three);
+}
+
+/* Typography */
+
+h1 {
+	line-height: 65px;
+	font-size: var(--font-50);
+}
+
+h2 {
+	line-height: 50px;
+	font-size: var(--font-36);
+}
+
+h3 {
+	line-height: 1.3em;
+	font-size: var(--font-30);
+}
+
+h4 {
+	line-height: 1.4em;
+	font-size: var(--font-24);
+}
+
+h5 {
+	line-height: 1.4em;
+	font-size: var(--font-22);
+}
+
+h6 {
+	line-height: 1.6em;
+	font-size: var(--font-18);
+}
+
+.page-wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	min-width: 300px;
+	overflow: hidden;
+}
+
+ul,
+li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.theme-btn {
+	cursor: pointer;
+	display: inline-block;
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.centered {
+	text-align: center;
+}
+
+::-webkit-input-placeholder {
+	color: inherit;
+}
+
+::-moz-input-placeholder {
+	color: inherit;
+}
+
+::-ms-input-placeholder {
+	color: inherit;
+}
+
+/***
+
+====================================================================
+	Scroll To Top style
+====================================================================
+
+***/
+
+/* Backto Up */
+
+.progress-wrap {
+	position: fixed;
+	right: 30px;
+	bottom: 40px;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	display: block;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	box-shadow: inset 0 0 0 2px #EDF6FF;
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+	transform: translateY(15px);
+	-webkit-transform: translateY(15px);
+	-moz-transform: translateY(15px);
+	-ms-transform: translateY(15px);
+	-o-transform: translateY(15px);
+}
+
+.progress-wrap.active-progress {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.progress-wrap::after {
+	position: absolute;
+	content: '\f062';
+	font-family: 'FontAwesome';
+	text-align: center;
+	line-height: 40px;
+	font-size: 17px;
+	color: var(--main-color);
+	left: 0;
+	top: 0;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	display: block;
+	z-index: 1;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+.progress-wrap svg path {
+	fill: none;
+}
+
+.progress-wrap svg.progress-circle path {
+	stroke: var(--main-color);
+	stroke-width: 4;
+	box-sizing: border-box;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+
+/* Btn Style One */
+
+.btn-style-one {
+	position: relative;
+	padding: 9px 25px 8px;
+	border-radius: 50px;
+	overflow: hidden;
+	text-align: center;
+	display: inline-block;
+	color: var(--white-color);
+	font-size: var(--font-14);
+	background-color: var(--main-color);
+	font-family: var(--font-lato-bold);
+	background: #212529;
+}
+
+.btn-style-one:before {
+	-webkit-transition-duration: 800ms;
+	transition-duration: 800ms;
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	content: "";
+	top: -200%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-radius: 50%;
+	z-index: 1;
+
+	background: var(--black-color);
+}
+
+.btn-style-one:hover:before {
+	top: 0%;
+}
+
+.btn-style-one .btn-wrap {
+	position: relative;
+	z-index: 1;
+	float: left;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.btn-style-one .btn-wrap .text-one {
+	position: relative;
+	display: block;
+	color: var(--white-color);
+	transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+}
+
+.btn-style-one:hover .btn-wrap .text-one:first-child {
+	-webkit-transform: translateY(-150%);
+	-ms-transform: translateY(-150%);
+	transform: translateY(-150%);
+}
+
+.btn-style-one .btn-wrap .text-two {
+	position: absolute;
+	top: 100%;
+	display: block;
+	color: var(--white-color);
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.btn-style-one:hover .btn-wrap .text-two {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.btn-style-one:hover .btn-wrap .text-two {
+	color: var(--white-color);
+}
+
+.btn-style-one:hover {}
+
+.btn-style-one .icon {
+	position: relative;
+	z-index: 1;
+	font-weight: normal;
+	font-family: "flaticon";
+	font-size: var(--font-16);
+	transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	margin-left: 10px;
+}
+
+.btn-style-one:hover .icon {
+	color: var(--white-color);
+}
+
+.btn-style-one:hover:before {
+	top: -40%;
+}
+
+.theme_color {
+	color: #0060ff;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	filter: brightness(1.09);
+}
+
+/*** 
+
+====================================================================
+	Section Title
+====================================================================
+
+***/
+
+.sec-title {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 40px;
+}
+
+.sec-title h2 {
+	z-index: 1;
+	font-weight: 500;
+}
+
+/* .sec-title h2 span{
+	position:relative;
+} */
+
+.sec-title h2 span:before {
+	position: absolute;
+	content: '';
+	left: 0px;
+	right: 0px;
+	bottom: 5px;
+	height: 5px;
+	z-index: -1;
+	background: url(../img/vector-3.webp) no-repeat;
+}
+
+.sec-title .text {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.sec-title.light h2 {
+	color: var(--white-color);
+}
+
+.sec-title.centered {
+	text-align: center !important;
+}
